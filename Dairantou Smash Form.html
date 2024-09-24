@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>
+      Dairantou smash form
+    </title>
+    <style>
+      #background-audio {
+          display: none; /* Masque le lecteur audio */
+      }
+  </style>
+  </head>
+  <body>
+    <audio id="background-audio" preload="auto" src="https://github.com/LiiamD/Dairantou-Smash-Form/raw/refs/heads/main/Menu%20-%20Super%20Smash%20Bros.%20Melee%20(320%20kbps).mp3" type="audio/mp3" autoplay loop></audio>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const audio = document.getElementById('background-audio');
+          document.body.addEventListener('click', function() {
+              if (audio.paused) {
+                  audio.play();
+              }
+          });
+      });
+  </script>
+<h1 id="title">
+  Dairantou Smash Form
+</h1>
+<p id="description">Smash-up the form !</p>
+
+<form action="https://s1.webmshare.com/rOvy8.webm" id="survey-form" target="_blank">
+
+    <label id="name-label">Pseudo :
+<input required id="name" type="text" placeholder="Entre ton pseudo">
+    </label>
+
+    <label id="email-label">E-mail :
+<input required id="email" type="email" placeholder="Entre ton e-mail">
+    </label>
+
+    <label id="number-label">Age :
+<input required id="number" type="number" placeholder="Quel âge as-tu" max="99" min="10"">
+    </label>
+
+    <label for="dropdown">Ton personnage préféré
+      <select required id="dropdown">
+        <option value="">(Choisis ton main)</option>
+      <option value="1">Mario</option>
+    <option value="2">Bowser</option>
+    <option value="3">Peach</option>
+    <option value="4">Yoshi</option>
+    <option value="5">Donkey Kong</option>
+    <option value="6">Captain Falcon</option>
+    <option value="7">Fox</option>
+    <option value="8">Ness</option>
+    <option value="9">Ice Climbers</option>
+    <option value="10">Kirby</option>
+    <option value="11">Samus</option>
+    <option value="12">Zelda</option>
+    <option value="13">Link</option>
+    <option value="14">Pikachu</option>
+    <option value="15">Rondoudou</option>
+    <option value="16">Dr.Martin</option>
+    <option value="17">Luigi</option>
+    <option value="18">Ganondorf</option>
+    <option value="19">Falco</option>
+    <option value="20">Link Enfant</option>
+    <option value="21">Pichu</option>
+    <option value="22">Mewtwo</option>
+    <option value="23">Mr. Game & Watch</option>
+    <option value="24">Marth</option>
+    <option value="25">Roy</option>
+    </select>
+
+<legend>Smash est-il le meilleur jeu de combat ?</legend>
+
+    <label for="oui-account"> 
+    <input class="inline" checked type="radio" id="oui-account" name="account-type" value="oui-non"/> oui
+    </label>
+
+    <label for="non-account">
+   <input class="inline" type="radio" id="non-account" name="account-type" value="oui-non"/> non
+    </label>
+
+<legend>
+  Cochez la bonne case !</legend>
+<label for="radiohead-check">
+<input class="inline" name="check" id="radiohead-check" type="checkbox" value="check-type"/> Dans la scène compétitive smash, quand un joueur arrive à battre son adversaire sans se faire toucher, on dit qu'il a fait un JV5.
+</label>
+
+<label for="martin-check">
+<input class="inline" name="check" id="martin-check" type="checkbox" value="check-type"/> Dans le vocabulaire du jeu de combat, le mix-up, c'est quand on place la barre haute à chaque coup sans aucune limite. 
+</label>
+
+
+
+<label for="bio">Ton meilleur moment sur Smash :
+  <textarea name="bio" for="bio" placeholder="Raconte-nous ce qui t'as plu dans Smash" rows="5"></textarea>
+</label>
+
+
+    <input required id="submit" type="submit" value="let's go"/>
+    
+
+</form>
+  </body>
+  </html>
+
+  
